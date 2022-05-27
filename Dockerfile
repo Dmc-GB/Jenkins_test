@@ -2,7 +2,7 @@
 FROM node:7-onbuild
 
 # set maintainer
-LABEL maintainer "miiro@getintodevops.com"
+LABEL maintainer "dmcdubled@gmail.com"
 
 # set a health check
 HEALTHCHECK --interval=5s \
