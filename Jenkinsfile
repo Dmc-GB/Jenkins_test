@@ -10,6 +10,9 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
+        docker.image('maven:3.3.3').inside {
+        sh 'mvn --version'
+      }
 
         app = docker.build("Dmc-GB/Jenkins_test")
     }
